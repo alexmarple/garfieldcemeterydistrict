@@ -1,0 +1,10 @@
+.rules {
+  width: 100%;
+  color: #fff;
+  background: #981e32;
+}
+
+.rulesList {
+  text-align: justify;
+  padding: 0 200px;
+}
