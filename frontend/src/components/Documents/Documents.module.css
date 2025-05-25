@@ -1,0 +1,14 @@
+.documents {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  padding: 40px 0;
+}
+
+.documentsList {
+  text-align: justify;
+}
+
+.documents h2 {
+  margin: 0;
+}

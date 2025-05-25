@@ -1,0 +1,20 @@
+.info {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  flex-direction: column;
+  padding: 20px 20px 60px;
+}
+
+.info p {
+  margin: 0 0 10px;
+}
+
+@media (min-width: 601px) {
+  .info {
+    justify-content: center;
+    align-items: center;
+    flex-direction: column;
+    padding: 20px 200px 60px;
+  }
+}

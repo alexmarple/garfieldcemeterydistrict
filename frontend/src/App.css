@@ -1,0 +1,15 @@
+#root {
+  text-align: center;
+  color: #981e32;
+}
+
+html {
+  scroll-behavior: smooth;
+}
+
+.main {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  flex-direction: column;
+}
