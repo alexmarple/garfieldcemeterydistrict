@@ -16,8 +16,10 @@ export default function Gallery() {
     slidesToShow: 3,
     slidesToScroll: 1,
     centerMode: true,
-    centerPadding: '60px',
     className: 'center',
+    // autoplay: true,
+    // autoplaySpeed: 2000,
+    // cssEase: 'linear',
   };
   return (
     <div id='gallery' className={styles.gallery}>

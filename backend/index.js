@@ -1,25 +1,3 @@
-// import express from 'express';
-// import cors from 'cors';
-
-// import contactRoutes from './contactRoutes';
-// import subscribeRoutes from './subscribeRoutes';
-
-// const app = express();
-// const PORT = process.env.PORT || 3231;
-
-// app.use(express.json());
-// app.use(cors());
-
-// app.use('/contact', contactRoutes);
-
-// app.use('/subscribe', subscribeRoutes);
-
-// app.listen(3500, () => {
-//   console.log(`Listening on port ${PORT}!`);
-//   connectDB();
-// });
-
-// server.js
 import express from 'express';
 import cors from 'cors';
 import nodemailer from 'nodemailer';
@@ -30,15 +8,13 @@ dotenv.config();
 const app = express();
 const PORT = process.env.PORT || 4000;
 
-// Allow your React app origin
 app.use(cors({ origin: process.env.FRONTEND_ORIGIN }));
 app.use(express.json());
 
-// Configure Nodemailer transporter
 const transporter = nodemailer.createTransport({
   host: process.env.SMTP_HOST,
   port: Number(process.env.SMTP_PORT),
-  secure: process.env.SMTP_SECURE === 'true', // true for 465, false for other ports
+  secure: process.env.SMTP_SECURE === 'true',
   auth: {
     user: process.env.SMTP_USER,
     pass: process.env.SMTP_PASS,
