@@ -1,0 +1,7 @@
+{
+  "scripts": {
+    "build:frontend": "cd frontend && npm ci && npm run build",
+    "build:functions": "cd .netlify/functions && npm ci",
+    "build": "npm run build:frontend && npm run build:functions"
+  }
+}
