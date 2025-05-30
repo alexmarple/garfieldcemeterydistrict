@@ -3,5 +3,21 @@
     "build:frontend": "cd frontend && npm ci && npm run build",
     "build:functions": "cd .netlify/functions && npm ci",
     "build": "npm run build:frontend && npm run build:functions"
-  }
+  },
+  "name": "garfieldcemeterydistrict",
+  "version": "1.0.0",
+  "description": "",
+  "main": "index.js",
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/alexmarple/garfieldcemeterydistrict.git"
+  },
+  "keywords": [],
+  "author": "",
+  "license": "ISC",
+  "type": "commonjs",
+  "bugs": {
+    "url": "https://github.com/alexmarple/garfieldcemeterydistrict/issues"
+  },
+  "homepage": "https://github.com/alexmarple/garfieldcemeterydistrict#readme"
 }
