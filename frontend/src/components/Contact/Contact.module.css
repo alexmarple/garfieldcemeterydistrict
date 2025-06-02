@@ -59,15 +59,15 @@ button:hover {
 
 .success {
   color: #28a745;
-  margin-top: 0.5rem;
-  font-size: 0.9rem;
+  background: #fff;
+  padding: 10px;
   text-align: center;
 }
 
 .error {
   color: #dc3545;
-  margin-top: 0.5rem;
-  font-size: 0.9rem;
+  background: #fff;
+  padding: 10px;
   text-align: center;
 }
 

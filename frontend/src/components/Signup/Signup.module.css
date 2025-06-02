@@ -42,12 +42,12 @@
 
 .success {
   color: #28a745;
-  margin-top: 0.5rem;
-  font-size: 0.9rem;
+  background: #fff;
+  padding: 10px;
 }
 
 .error {
   color: #dc3545;
-  margin-top: 0.5rem;
-  font-size: 0.9rem;
+  background: #fff;
+  padding: 10px;
 }
