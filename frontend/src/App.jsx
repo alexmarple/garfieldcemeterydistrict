@@ -8,14 +8,15 @@ import Gallery from './components/Gallery';
 import Hero from './components/Hero';
 import Info from './components/Info';
 import Rules from './components/Rules';
-import Alert from './components/Alert';
+// uncomment alerts when an alert is needed
+// import Alert from './components/Alert';
 import Directions from './components/Directions';
 import Activities from './components/Activities';
 
 function App() {
   return (
     <>
-      <Alert />
+      {/* <Alert /> */}
       <Header />
       <div className='main'>
         <Hero />

@@ -14,7 +14,7 @@ const Signup = () => {
     e.preventDefault();
     setStatus('sending');
     try {
-      const res = await fetch('/.netlify/functions/subscribe.js', {
+      const res = await fetch('/.netlify/functions/subscribe', {
         method: 'POST',
         headers: { 'Content-Type': 'application/json' },
         body: JSON.stringify(form),
