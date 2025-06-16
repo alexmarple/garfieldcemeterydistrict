@@ -1,5 +1,3 @@
-import './App.css';
-
 import Header from './components/Header';
 import Footer from './components/Footer';
 import Contact from './components/Contact';
@@ -18,7 +16,14 @@ function App() {
     <>
       {/* <Alert /> */}
       <Header />
-      <div className='main'>
+      <div
+        style={{
+          display: 'flex',
+          alignItems: 'center',
+          justifyContent: 'center',
+          flexDirection: 'column',
+        }}
+      >
         <Hero />
         <Info />
         <Activities />
