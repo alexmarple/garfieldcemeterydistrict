@@ -10,11 +10,25 @@
   margin: 0 0 10px;
 }
 
-@media (min-width: 601px) {
+@media (min-width: 601px) and (max-width: 1024px) {
   .info {
     justify-content: center;
     align-items: center;
     flex-direction: column;
     padding: 20px 200px 60px;
+  }
+}
+
+/* Desktop */
+@media (min-width: 1025px) {
+  .info {
+    padding: 20px 300px 60px;
+  }
+}
+
+/* Large Desktop */
+@media (min-width: 1440px) {
+  .info {
+    padding: 40px 400px 80px;
   }
 }
