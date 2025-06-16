@@ -15,3 +15,7 @@
   width: 544px;
   height: 544px;
 }
+
+.slick-next, .slick-prev {
+  display: none !important;
+}

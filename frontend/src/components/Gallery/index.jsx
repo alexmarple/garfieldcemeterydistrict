@@ -8,6 +8,28 @@ const modules = import.meta.glob('../../assets/*.{png,jpg,jpeg,svg,gif}', {
 });
 const images = Object.values(modules).map((m) => m.default);
 
+function NoNextArrow(props) {
+  const { className, style, onClick } = props;
+  return (
+    <div
+      className={className}
+      style={{ ...style, display: 'none' }}
+      onClick={onClick}
+    />
+  );
+}
+
+function NoPrevArrow(props) {
+  const { className, style, onClick } = props;
+  return (
+    <div
+      className={className}
+      style={{ ...style, display: 'none' }}
+      onClick={onClick}
+    />
+  );
+}
+
 export default function Gallery() {
   const settings = {
     dots: true,
@@ -17,6 +39,8 @@ export default function Gallery() {
     slidesToScroll: 1,
     centerMode: true,
     className: 'center',
+    nextArrow: <NoNextArrow />,
+    prevArrow: <NoPrevArrow />,
     responsive: [
       {
         breakpoint: 1024,
