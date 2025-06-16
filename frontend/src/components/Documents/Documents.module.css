@@ -3,6 +3,9 @@
   flex-direction: column;
   align-items: center;
   padding: 40px 0;
+  background: #5e6a71;
+  color: #fff;
+  width: 100%;
 }
 
 .documentsList {
