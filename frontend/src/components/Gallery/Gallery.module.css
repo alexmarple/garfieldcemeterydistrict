@@ -16,6 +16,7 @@
   height: 544px;
 }
 
-.slick-next, .slick-prev {
+.slick-next,
+.slick-prev {
   display: none !important;
 }

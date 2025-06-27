@@ -1,8 +1,8 @@
-import styles from './Activities.module.css';
+import styles from "./Activities.module.css";
 
 const Activities = () => {
   return (
-    <div id='activities' className={styles.activities}>
+    <div id="activities" className={styles.activities}>
       <h2>Activities & Events</h2>
       <p>No current activities or events.</p>
       <h3>Past Activities:</h3>

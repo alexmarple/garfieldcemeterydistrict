@@ -1,9 +1,9 @@
-import styles from './Info.module.css';
-import Map from '../Map';
+import styles from "./Info.module.css";
+import Map from "../Map";
 
 const Info = () => {
   return (
-    <div id='about'>
+    <div id="about">
       <div className={styles.info}>
         <div className={styles.border}>
           <h1>The Whitman County Cemetery District #2</h1>

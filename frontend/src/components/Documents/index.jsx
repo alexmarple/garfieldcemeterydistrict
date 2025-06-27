@@ -1,8 +1,8 @@
-import styles from './Documents.module.css';
+import styles from "./Documents.module.css";
 
 const Documents = () => {
   return (
-    <div id='documents' className={styles.documents}>
+    <div id="documents" className={styles.documents}>
       <h2>Documents</h2>
       <p>
         Agendas include old business, new business, bill paying and approval,
