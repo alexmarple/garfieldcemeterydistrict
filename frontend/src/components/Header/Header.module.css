@@ -2,7 +2,7 @@
   height: 60px;
   background: #981e32;
   display: flex;
-  justify-content: space-between;
+  justify-content: center;
   align-items: center;
   color: #fff;
 }
@@ -10,6 +10,8 @@
 .logoLink {
   display: flex;
   align-items: center;
+  font-weight: bold;
+  font-size: 1.5em;
 }
 
 .logoLink a {
@@ -21,22 +23,13 @@
   filter: brightness(0.8);
 }
 
+/* Mobile default: hide links, show hamburger */
 .links {
-  display: flex;
-  margin-right: 10px;
-}
-
-.links a {
-  margin: 0 10px;
-  color: #fff;
-}
-
-.links a:hover {
-  filter: brightness(0.8);
+  display: none;
 }
 
 .hamburger {
-  display: none;
+  display: flex;
   flex-direction: column;
   justify-content: space-around;
   width: 24px;
@@ -45,6 +38,7 @@
   border: none;
   cursor: pointer;
 }
+
 .hamburger span {
   display: block;
   width: 100%;
@@ -52,21 +46,45 @@
   background: #fff;
 }
 
-@media (max-width: 768px) {
+/* Tablet styles */
+@media (min-width: 768px) and (max-width: 1023px) {
   .links {
-    display: none;
-    position: absolute;
-    top: 60px;
-    right: 0;
-    flex-direction: column;
-    background: #981e32;
-    width: 200px;
-    padding: 1rem;
-  }
-  .links.open {
     display: flex;
+    margin-right: 10px;
+  }
+  .links a {
+    margin: 0 10px;
+    color: #fff;
+  }
+  .links a:hover {
+    filter: brightness(0.8);
   }
   .hamburger {
+    display: none;
+  }
+}
+
+/* Desktop styles */
+@media (min-width: 1024px) {
+  .header {
+    justify-content: space-between;
+  }
+  .logoLink {
+    font-weight: 400;
+    font-size: 1em;
+  }
+  .links {
     display: flex;
+    margin-right: 10px;
+  }
+  .links a {
+    margin: 0 10px;
+    color: #fff;
+  }
+  .links a:hover {
+    filter: brightness(0.8);
+  }
+  .hamburger {
+    display: none;
   }
 }

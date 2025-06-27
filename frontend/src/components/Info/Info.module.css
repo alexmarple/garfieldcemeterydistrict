@@ -10,6 +10,8 @@
   margin: 0 0 10px;
 }
 
+
+
 @media (min-width: 601px) and (max-width: 1024px) {
   .info {
     justify-content: center;
@@ -23,6 +25,11 @@
 @media (min-width: 1025px) {
   .info {
     padding: 20px 300px 60px;
+  }
+  .border {
+    border: 5px solid #981e32;
+    border-radius: 25px;
+    padding: 20px;
   }
 }
 
