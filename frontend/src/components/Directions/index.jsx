@@ -14,6 +14,8 @@ export default function Directions() {
           pass the Trap and Rifle Range, turn into the cemetery.
         </p>
         <Map />
+        <h2>Find A Gravestone:</h2>
+        <p>Coming soon.</p>
       </div>
     </div>
   );
