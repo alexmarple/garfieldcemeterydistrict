@@ -26,3 +26,13 @@ body {
   min-width: 320px;
   min-height: 100vh;
 }
+
+.box {
+  padding: 20px;
+}
+
+@media (min-width: 1025px) {
+  .box {
+    padding: 20px 300px 60px;
+  }
+}
