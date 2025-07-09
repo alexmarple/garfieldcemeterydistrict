@@ -9,7 +9,6 @@
   font-weight: 600;
   margin-bottom: 0.25rem;
   display: block;
-  width: 214px;
 }
 
 .inputGroup {
@@ -50,4 +49,10 @@
   color: #dc3545;
   background: #fff;
   padding: 10px;
+}
+
+@media (min-width: 1024px) {
+  .label {
+    width: 214px;
+  }
 }

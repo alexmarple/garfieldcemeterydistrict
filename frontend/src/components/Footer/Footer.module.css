@@ -1,20 +1,30 @@
 .footer {
   height: 150px;
   color: #fff;
-  background: 
-  repeating-linear-gradient(
-    45deg,
-    rgba(255,255,255,0.05) 0,
-    rgba(255,255,255,0.05) 1px,
-    transparent 1px,
-    transparent 10px
-  ),
-  #5e6a71;
+  background:
+    repeating-linear-gradient(
+      45deg,
+      rgba(255, 255, 255, 0.05) 0,
+      rgba(255, 255, 255, 0.05) 1px,
+      transparent 1px,
+      transparent 10px
+    ),
+    #5e6a71;
   padding: 20px;
   display: flex;
   flex-direction: column;
   justify-content: center;
   align-items: center;
+}
+
+.detailsBox {
+  display: flex;
+  flex-direction: column;
+}
+
+.detailsText {
+  font-weight: bold;
+  margin-bottom: 0;
 }
 
 @media (min-width: 601px) {
@@ -27,5 +37,14 @@
   .footer h1,
   .footer p {
     margin: 0;
+  }
+}
+
+@media (min-width: 1024px) {
+  .detailsBox {
+    flex-direction: row;
+  }
+  .detailsText {
+    margin-left: 10px;
   }
 }

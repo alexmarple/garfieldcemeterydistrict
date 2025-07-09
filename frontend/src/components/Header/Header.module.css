@@ -5,7 +5,6 @@
   justify-content: center;
   align-items: center;
   color: #fff;
-  /* width: 100vw; */
 }
 
 .logoLink {
@@ -16,7 +15,6 @@
 }
 
 .logoLink a {
-  margin-left: 20px;
   color: #fff;
 }
 
@@ -70,6 +68,9 @@
   .logoLink {
     font-weight: 400;
     font-size: 1em;
+  }
+  .logoLink a {
+    margin-left: 20px;
   }
   .links {
     display: flex;

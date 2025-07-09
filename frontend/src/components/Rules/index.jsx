@@ -1,9 +1,9 @@
-import styles from './Rules.module.css';
+import styles from "./Rules.module.css";
 
 const Rules = () => {
   return (
-    <div id='rules' className={styles.rules}>
-      <div className='box'>
+    <div id="rules" className={styles.rules}>
+      <div className="box">
         <h2>Rules</h2>
         <p>The rules for the cemetery are as follows:</p>
         <p>Coming soon.</p>
