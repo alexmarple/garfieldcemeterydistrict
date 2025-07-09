@@ -19,6 +19,9 @@ const Contact = () => {
         headers: { 'Content-Type': 'application/json' },
         body: JSON.stringify(form),
       });
+      // Also send the same payload to Netlify’s built-in form collector
+      const formData = new FormData(e.target);
+      await fetch('/', { method: 'POST', body: formData });
       const json = await res.json();
       if (json.success) {
         setStatus('sent');
@@ -52,7 +55,21 @@ const Contact = () => {
     <div id='contact' className={styles.contact}>
       <div className={styles.contactBox}>
         <h2 className={styles.title}>Contact Us</h2>
-        <form className={styles.form} method='POST' netlify>
+        <form
+          name='contact'
+          method='POST'
+          action='/.netlify/functions/contact'
+          data-netlify='true'
+          data-netlify-honeypot='bot-field'
+          className={styles.form}
+          onSubmit={handleSubmit}
+        >
+          <input type='hidden' name='form-name' value='contact' />
+          <p hidden>
+            <label>
+              Don’t fill this out if you’re human: <input name='bot-field' />
+            </label>
+          </p>
           <div className={styles.field}>
             <label htmlFor='name'>Name</label>
             <input

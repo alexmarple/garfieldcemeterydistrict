@@ -19,6 +19,9 @@ const Signup = () => {
         headers: { 'Content-Type': 'application/json' },
         body: JSON.stringify(form),
       });
+      // Also send to Netlify’s built-in form collector
+      const formData = new FormData(e.target);
+      await fetch('/', { method: 'POST', body: formData });
       const json = await res.json();
       if (json.success) {
         setStatus('sent');
@@ -42,7 +45,21 @@ const Signup = () => {
   }
   return (
     <div className={styles.signup}>
-      <form className={styles.form} method='POST' netlify>
+      <form
+        name='signup'
+        method='POST'
+        action='/.netlify/functions/subscribe'
+        data-netlify='true'
+        data-netlify-honeypot='bot-field'
+        className={styles.form}
+        onSubmit={handleSubmit}
+      >
+        <input type='hidden' name='form-name' value='signup' />
+        <p hidden>
+          <label>
+            Don’t fill this out if you’re human: <input name='bot-field' />
+          </label>
+        </p>
         <label htmlFor='signup-email' className={styles.label}>
           Subscribe to our newsletter
         </label>
