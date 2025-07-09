@@ -1,9 +1,9 @@
-import "slick-carousel/slick/slick.css";
-import "slick-carousel/slick/slick-theme.css";
-import styles from "./Gallery.module.css";
-import Slider from "react-slick";
+import 'slick-carousel/slick/slick.css';
+import 'slick-carousel/slick/slick-theme.css';
+import styles from './Gallery.module.css';
+import Slider from 'react-slick';
 
-const modules = import.meta.glob("../../assets/*.{png,jpg,jpeg,svg,gif}", {
+const modules = import.meta.glob('../../assets/*.{png,jpg,jpeg,svg,gif}', {
   eager: true,
 });
 const images = Object.values(modules).map((m) => m.default);
@@ -13,7 +13,7 @@ function NoNextArrow(props) {
   return (
     <div
       className={className}
-      style={{ ...style, display: "none" }}
+      style={{ ...style, display: 'none' }}
       onClick={onClick}
     />
   );
@@ -24,7 +24,7 @@ function NoPrevArrow(props) {
   return (
     <div
       className={className}
-      style={{ ...style, display: "none" }}
+      style={{ ...style, display: 'none' }}
       onClick={onClick}
     />
   );
@@ -34,11 +34,13 @@ export default function Gallery() {
   const settings = {
     dots: true,
     infinite: true,
-    speed: 500,
+    autoplay: true,
+    speed: 2000,
+    autoplaySpeed: 2000,
     slidesToShow: 3,
     slidesToScroll: 1,
     centerMode: true,
-    className: "center",
+    className: 'center',
     nextArrow: <NoNextArrow />,
     prevArrow: <NoPrevArrow />,
     responsive: [
@@ -69,7 +71,7 @@ export default function Gallery() {
     ],
   };
   return (
-    <div id="gallery" className={styles.gallery}>
+    <div id='gallery' className={styles.gallery}>
       <h2>Gallery</h2>
       <Slider {...settings} className={styles.images}>
         {images.map((src, idx) => (
