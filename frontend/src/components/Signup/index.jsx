@@ -48,11 +48,9 @@ const Signup = () => {
       <form
         name='signup'
         method='POST'
-        action='/.netlify/functions/subscribe'
         data-netlify='true'
         data-netlify-honeypot='bot-field'
         className={styles.form}
-        onSubmit={handleSubmit}
       >
         <input type='hidden' name='form-name' value='signup' />
         <p hidden>

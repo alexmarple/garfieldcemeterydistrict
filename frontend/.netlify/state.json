@@ -1,0 +1,20 @@
+{
+	"geolocation": {
+		"data": {
+			"city": "Troy",
+			"country": {
+				"code": "US",
+				"name": "United States"
+			},
+			"subdivision": {
+				"code": "NY",
+				"name": "New York"
+			},
+			"timezone": "America/New_York",
+			"latitude": 42.7273,
+			"longitude": -73.6696,
+			"postalCode": "12180"
+		},
+		"timestamp": 1752074029688
+	}
+}
