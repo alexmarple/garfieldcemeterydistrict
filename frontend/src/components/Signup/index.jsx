@@ -13,26 +13,29 @@ const Signup = () => {
   const handleSubmit = async (e) => {
     e.preventDefault();
     setStatus('sending');
-    try {
-      const res = await fetch('/.netlify/functions/subscribe', {
-        method: 'POST',
-        headers: { 'Content-Type': 'application/json' },
-        body: JSON.stringify(form),
-      });
-      // Also send to Netlify’s built-in form collector
-      const formData = new FormData(e.target);
-      await fetch('/', { method: 'POST', body: formData });
-      const json = await res.json();
-      if (json.success) {
-        setStatus('sent');
-        setForm({ email: '' });
-      } else {
-        throw new Error(json.error || 'Unknown error');
-      }
-    } catch (err) {
-      console.error(err);
-      setStatus('error');
-    }
+    setTimeout(() => {
+      setStatus('sent');
+    }, 1000);
+    // try {
+    //   const res = await fetch('/.netlify/functions/subscribe', {
+    //     method: 'POST',
+    //     headers: { 'Content-Type': 'application/json' },
+    //     body: JSON.stringify(form),
+    //   });
+    //   // Also send to Netlify’s built-in form collector
+    //   const formData = new FormData(e.target);
+    //   await fetch('/', { method: 'POST', body: formData });
+    //   const json = await res.json();
+    //   if (json.success) {
+    //     setStatus('sent');
+    //     setForm({ email: '' });
+    //   } else {
+    //     throw new Error(json.error || 'Unknown error');
+    //   }
+    // } catch (err) {
+    //   console.error(err);
+    //   setStatus('error');
+    // }
   };
 
   if (status === 'sent') {
