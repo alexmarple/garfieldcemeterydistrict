@@ -7,7 +7,7 @@ const Activities = () => {
         <h2>Activities & Events</h2>
         <p>No current activities or events.</p>
         <h3>Past Activities:</h3>
-        <p>Memorial Day Veterans Tribute, 11 am, May 26, 2025.</p>
+        <p>Memorial Day Veterans Tribute, May 26th, 2025 at 11am.</p>
         <p>
           Come see the improvements we have done to the cemetery and out
           beautification program. This is the last American Legion salute and

@@ -6,7 +6,7 @@ const Rules = () => {
       <div className='box'>
         <h2>Rules</h2>
         <p>The rules for the cemetery are as follows:</p>
-        <p>Rules coming soon.</p>
+        <p>Coming soon.</p>
         {/* <ul className={styles.rulesList}>
           <li>Rule 1</li>
           <li>Rule 2</li>

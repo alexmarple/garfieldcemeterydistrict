@@ -50,7 +50,7 @@ const Contact = () => {
 
   return (
     <div id='contact' className={styles.contact}>
-      <div className='box'>
+      <div className={styles.contactBox}>
         <h2 className={styles.title}>Contact Us</h2>
         <form className={styles.form} onSubmit={handleSubmit}>
           <div className={styles.field}>
