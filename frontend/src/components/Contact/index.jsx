@@ -52,7 +52,7 @@ const Contact = () => {
     <div id='contact' className={styles.contact}>
       <div className={styles.contactBox}>
         <h2 className={styles.title}>Contact Us</h2>
-        <form className={styles.form} onSubmit={handleSubmit} netlify>
+        <form className={styles.form} method='POST' netlify>
           <div className={styles.field}>
             <label htmlFor='name'>Name</label>
             <input

@@ -42,7 +42,7 @@ const Signup = () => {
   }
   return (
     <div className={styles.signup}>
-      <form className={styles.form} onSubmit={handleSubmit} netlify>
+      <form className={styles.form} method='POST' netlify>
         <label htmlFor='signup-email' className={styles.label}>
           Subscribe to our newsletter
         </label>
