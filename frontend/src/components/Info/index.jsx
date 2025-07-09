@@ -1,9 +1,9 @@
-import styles from "./Info.module.css";
-import Map from "../Map";
+import styles from './Info.module.css';
+import Map from '../Map';
 
 const Info = () => {
   return (
-    <div id="about">
+    <div id='about'>
       <div className={styles.info}>
         <div className={styles.border}>
           <h1>The Whitman County Cemetery District #2</h1>
@@ -17,11 +17,13 @@ const Info = () => {
             week.
           </p>
           <p>
-            Cemetery is closed November 1 to March 1 during inclement weather.
+            Due to inclement weather, the cemetery is closed November 1st to
+            March 1st.
           </p>
           <p>
-            Urn burials accepted but not full vault burials except by cemetery
-            board review during that time.
+            Contact us about urn and vault burials to get the most up to date
+            information on price, placement, and other important details about
+            your loved ones.
           </p>
           <p>
             Board Meetings are the first Wednesday of every month in the JE Love
